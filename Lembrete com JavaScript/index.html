@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Lembrete</title>
+        <link rel="stylesheet" href="file.css" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Poppins"
+            rel="stylesheet"
+        />
+        <script src="./file.js"></script>
+    </head>
+    <body>
+        <section>
+            <h1 style="text-align: center">Lembrete</h1>
+            <div style="margin-top: 5px" id="error"></div>
+            <div class="add">
+                <input
+                    type="text"
+                    name="lembrete"
+                    id="lembrete"
+                    placeholder=" Adicione uma tarefa..."
+                />
+                <button onclick="btnClick()">
+                    <img
+                        style="max-width: 32px"
+                        src="/img/icons8-plus-math-100.png"
+                    />
+                </button>
+            </div>
+            <div id="res" class="res"></div>
+        </section>
+    </body>
+</html>

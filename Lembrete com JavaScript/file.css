@@ -1,0 +1,131 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Poppins";
+}
+
+body {
+    background-image: linear-gradient(
+        -225deg,
+        #ac32e4 0%,
+        #7918f2 48%,
+        #4801ff 100%
+    );
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.add {
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+        rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    width: 500px;
+    height: 150px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.add input {
+    font-size: 1.2rem;
+    width: 73.5%;
+    height: 40px;
+    font-weight: 500;
+    outline: none;
+    border: none;
+}
+
+input::placeholder {
+    opacity: 0.5;
+}
+
+.add button {
+    background: white;
+    outline: none;
+    border: none;
+    height: 40px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.add button:hover {
+    transform: rotate(20deg);
+}
+
+.res {
+    width: 400px;
+}
+
+.res .container {
+    text-align: center;
+    padding: 0px 30px;
+    font-size: 1.2rem;
+    color: blue;
+    width: 500px;
+    background-color: white;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    opacity: 2;
+    transition: all 0.2s ease-in-out;
+    margin-right: 300px;
+}
+
+.res .container:last-child {
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.container #img {
+    width: 36px;
+    height: 36px;
+    transition: 0.2s ease;
+}
+
+.container #img2 {
+    width: 36px;
+    height: 36px;
+    transition: 0.2s ease;
+}
+
+#img:hover {
+    transform: rotate(180deg);
+}
+
+#img2:hover {
+    transform: rotate(360deg);
+}
+
+.res .container::selection {
+    background-color: rgb(65, 152, 202);
+    color: white;
+}
+
+.add input::selection {
+    color: white;
+    background-color: rgb(65, 152, 202);
+}
+
+#error {
+    font-weight: 400;
+    font-size: 1.2rem;
+    text-align: center;
+    width: 500px;
+    height: 40px;
+    transition: 0.5s ease;
+    opacity: 0;
+}
