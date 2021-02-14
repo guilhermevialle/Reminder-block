@@ -1,6 +1,8 @@
 
 ## Reminder Block with JavaScript 
 
+> #### by guilhermevialle
+
 ### Features
 
 - Functional
